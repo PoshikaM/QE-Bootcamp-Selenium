@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha \"tests/selenium/**/*.test.js\"",
+    "coverage": "nyc npm test"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,9 @@
   "dependencies": {
     "chromedriver": "^137.0.0",
     "selenium-webdriver": "^4.33.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.5.0",
+    "nyc": "^17.1.0"
   }
 }

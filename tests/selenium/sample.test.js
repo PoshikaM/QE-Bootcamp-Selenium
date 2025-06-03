@@ -1,4 +1,4 @@
-const { Builder } = require('selenium-webdriver');
+import { Builder } from 'selenium-webdriver';
 
 (async function openGitHub() {
   let driver = await new Builder().forBrowser('chrome').build();
